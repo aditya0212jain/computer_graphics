@@ -1,0 +1,18 @@
+In this assignment, you will replace the raytracer with OpenGL Pipeline. The scene will largely be the same as the previous assignment with the following changes:
+The snowman will have a textured smily face. So, will all spheres.
+There will not be any (invisible) walls, but include a floor.
+There will be only two lights, and no tube-lights displayed.
+A camera light (that stays at the same location as the camera), and
+A "headlight" at the top of the snowman's head.
+There will be no glass balls. They shiny spheres are all specular, but half are highly smooth and the rest are highly rough.
+All materials absorb 50% of the light.
+You should convert a sphere's geometry to triangles offline, and save it in a file. Devise a generic reader for your scene (which should instance the same phere multiple times; the partial sphere may have a separate file).
+There will be 3 extra credits for making the floor wet (almost mirror like), and drawing shadow on the floor.
+
+The interface will be a bit more general:
+
+Selecting a background pixel and dragging the mouse should rotate the camera (left to right or up to down). If the shrft button is simultaneously pressed, the camera should move in camera-Z, depending on the mouse's Y copordinate.
+Selecting a shiny ball and dragging the mouse should translate it in Camera-X or Camera-Y (mapped respectively from mouse X and mouse Y).
+Selecting the base sphere of the snowman and dragging should rotate the entire snowman about its contact with the ground.
+Selecting the torso of the snowman and dragging should rotate the torso and the head about the base's center.
+Selecting the head of the snowman and dragging should rotate the head about the torso's center.
