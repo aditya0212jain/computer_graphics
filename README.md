@@ -65,6 +65,3 @@ cd build
 
 ![Rendered Image](./opengl/ss.png)
 
-### TODO 
-
-upload the full code for opengl after deadline (21st February).
